@@ -1,0 +1,144 @@
+/* ESERCIZIO 1 */
+.ex-1-square {
+  transition: 0.8s;
+}
+
+.ex-1-square:hover {
+  background-color: red;
+}
+
+/* ESERCIZIO 2 */
+.ex-2-square {
+  transition: 1s;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+/* ESERCIZIO 3 */
+.ex-3-square {
+  transition: 0.8s;
+}
+
+.ex-3-square:hover{
+  border-radius: 100%
+}
+
+/* ESERCIZIO 4 */
+.ex-4-square {
+  transition: 0.8s ease-in;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+/* ESERCIZIO 5 */
+.ex-5-square {
+  transition: transform 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.ex-5-square:hover {
+  transform: scale(2, 2);
+}
+
+.ex-5-square:active {
+  transform: scale(0.6, 0.6);
+}
+
+/* ESERCIZIO 6 */
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+/* ESERCIZIO 7 */
+.ex-7-img {
+  transition: all 1s linear;
+}
+
+.ex-7-img:hover {
+  filter: sepia(0.5) grayscale(0.5);
+}
+
+/* ESERCIZIO 8 */
+.ex-8-img {
+  transition: all 1.5s ease;
+}
+
+.ex-8-img:hover {
+  filter: sepia(0.6);
+  border-radius: 25px;
+}
+
+/* ESERCIZIO 9 */
+.ex-9-img {
+  transition: all 1.5s ease-in-out;
+}
+
+.ex-9-img:hover {
+  filter: grayscale(0.7);
+  transform: scale(1.5, 1.5);
+  border-radius: 25px;
+}
+
+/* ESERCIZIO 10 */
+.ex-10-icon {
+  animation-name: rotate;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from{transform: rotate(0deg)}
+  to{transform: rotate(360deg)}
+}
+
+/* ESERCIZIO 11 */
+.ex-11-icon:hover {
+  animation-name: falserotate;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  animation-iteration-count: 1;
+}
+
+@keyframes falserotate {
+  0% {transform:rotate(0deg)}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(0deg);}
+}
+
+/* ESERCIZIO 12 */
+.ex-12-button:hover .ex-12-top-white {
+  animation-name: upper-12;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+}
+
+@keyframes upper-12 {
+  0% {left:10%}
+  50% {left:70%}
+  100% {left:10%}
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation-name: lower-12;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+}
+
+@keyframes lower-12 {
+  0% {right:20%}
+  50% {right:70%}
+  100% {right:20%}
+}
